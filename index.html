@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="body">
+    <div class="text">
+      <h1><b>calc</b></h1>
+    </div>
+    <div class="display">
+      <input type="text" class="screen" placeholder="0" id="output-screen">
+      <div class="btns">
+        <button onclick="display('7')"><b>7</b></button>
+        <button onclick="display('8')"><b>8</b></button>
+        <button onclick="display('9')"><b>9</b></button>
+        <button onclick="del()"><b>DEL</b></button>
+        <button onclick="display('4')"><b>4</b></button>
+        <button onclick="display('5')"><b>5</b></button>
+        <button onclick="display('6')"><b>6</b></button>
+        <button onclick="display('+')"><b>+</b></button>
+        <button onclick="display('1')"><b>1</b></button>
+        <button onclick="display('2')"><b>2</b></button>
+        <button onclick="display('3')"><b>3</b></button>
+        <button onclick="display('-')"><b>-</b></button>
+        <button onclick="display('.')"><b>.</b></button>
+        <button onclick="display('0')"><b>0</b></button>
+        <button onclick="display('/')"><b>/</b></button>
+        <button onclick="display('*')"><b>x</b></button>
+        <button onclick="reset()"><b>RESET</b></button>
+        <button onclick="Calculate()"><b>=</b></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
